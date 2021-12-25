@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a,b=1,c=0,x,i;
+    printf("enter the limit to print fabnonacci series");
+    scanf("%d",&x);
+    for(i=0;i<=x;i++)
+    {
+        printf("%d",c);
+        a=b;
+        b=c;
+        c=a+b;
+    }
+}
