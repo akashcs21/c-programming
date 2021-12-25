@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int m,n1,n2;
+    printf("enter the no.");
+    scanf("%d%d",&n1,&n2);
+    m=n1>n2? n1:n2;
+    printf("Largest number is %d",m);
+    
+}
