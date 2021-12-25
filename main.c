@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    float amt,credit,debit;
+    char ch;
+    printf("enter intial amount\n");
+    scanf("%f",&amt);
+    printf("enter the\nc for credit\nd for debit\nb for balance");
+    scanf("\n%c",&ch);
+    switch(ch)
+    {
+        case 'c': printf("enter the amount\n");
+          scanf("%f",&credit);
+          amt=amt+credit;
+          printf("the total amount is=%f",amt);
+          break;
+          case 'd':  printf("enter the amount to withdraw");
+                  scanf("%f",&debit);
+                  amt=amt-debit;
+                  printf("the left amount is=%f",amt);
+                  break;
+        case 'b':   printf("amount in your account is=%f",amt);
+                break;
+                default:
+                printf("invalid input");
+            
+                  
+    }
+}
