@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int amount,r,p;
+    printf("enter the price and rate of product");
+    scanf("%d%d",&p,&r);
+    amount= p+(p*r)/100;
+    printf("%d",amount);
+}
